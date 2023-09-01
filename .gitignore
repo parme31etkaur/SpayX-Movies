@@ -27,7 +27,7 @@ coverage
 .nyc_output
 
 #images and videos
-vedio
+
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
@@ -57,7 +57,7 @@ web_modules/
 .eslintcache
 
 #global
-global.js
+# global.js
 # Optional stylelint cache
 .stylelintcache
 
@@ -77,7 +77,7 @@ global.js
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+# .env
 .env.development.local
 .env.test.local
 .env.production.local
