@@ -68,9 +68,9 @@ app.get("/", function (req, res) {
 });
 app.get("/auth/google", passport.authenticate("google", { scope: ["profile"] }));
 
-app.get("/auth/google/index",passport.authenticate('google',{failureRedirect:'/login'}),
+app.get("/auth/google/index",passport.authenticate('google',{failureRedirect:'/login.html'}),
 function(req,res){
-    res.redirect('/index');
+    res.redirect('/index.html');
 });
 
 app.get("/index", function (req, res) {
