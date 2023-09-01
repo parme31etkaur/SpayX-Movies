@@ -54,7 +54,7 @@ passport.use(new GoogleStrategy({
     clientID:process.env.CLIENT_ID,
     clientSecret:process.env.CLIENT_SECRET,
     callbackURL:"https://spayx-y24j.onrender.com/auth/google/index",
-    userProfileURL:'https://www.googleapis.com/oauth2/v3/userinfo'
+    userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
 },
 function(accessToken, refreshToken, profile, cb){
     console.log(profile.displayName);
@@ -68,9 +68,9 @@ app.get("/", function (req, res) {
 });
 app.get("/auth/google", passport.authenticate("google", { scope: ["profile"] }));
 
-app.get("/auth/google/index",passport.authenticate('google',{failureRedirect:'/login.html'}),
+app.get("/auth/google/index",passport.authenticate('google',{failureRedirect:'/login'}),
 function(req,res){
-    res.redirect('/index.html');
+    res.redirect('/index');
 });
 
 app.get("/index", function (req, res) {
