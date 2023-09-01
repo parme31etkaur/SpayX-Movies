@@ -72,7 +72,6 @@ app.get("/auth/google/index",passport.authenticate('google',{failureRedirect:'/l
 function(req,res){
     res.redirect('/index');
 });
-
 app.get("/index", function (req, res) {
     if (req.isAuthenticated()) {
         res.sendFile(__dirname + "/index.html");
@@ -81,6 +80,11 @@ app.get("/index", function (req, res) {
         res.redirect("/login.html");
     }
 });
+app.get('/login', (req, res) => {
+    // Handle authentication failure here, you can log the error
+    console.error('Google authentication failed:', req.query.error);
+    res.redirect('/login.html'); // Redirect to your login page or show an error message
+  });
 app.post("/login", function (req, res) {
     User.register({username: req.body.username}, req.body.password, function(err, user){
         if (err) {
