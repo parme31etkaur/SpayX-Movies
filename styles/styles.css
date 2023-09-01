@@ -2,6 +2,7 @@ body {
   background-color: black;
   color: white;
 }
+
 /*---navbar----*/
 .brandname {
   height: 55px;
@@ -867,42 +868,48 @@ a {
 
 @media only screen and (max-width: 767px) {
   .cards {
-    height: auto; 
-    overflow-x: scroll; 
+    height: auto;
+    overflow-x: scroll;
   }
+
   .cards .card {
-    min-width: 140px; 
-    height: auto; 
+    min-width: 140px;
+    height: auto;
     margin-left: 5px;
-    padding: 0; 
+    padding: 0;
   }
+
   .poster {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .cards {
-    height: auto; 
-    overflow-x: scroll; 
+    height: auto;
+    overflow-x: scroll;
   }
+
   .cards .card {
-    min-width: 140px; 
-    height: auto; 
+    min-width: 140px;
+    height: auto;
     margin-left: 5px;
-    padding: 0; 
+    padding: 0;
   }
+
   .poster {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
-  #movieTitle{
+
+  #movieTitle {
     margin-top: 30%;
     margin-left: 45%;
     font-size: 3REM;
   }
-  
-  #movieOverview{
+
+  #movieOverview {
     margin-top: 60px;
   }
 }
