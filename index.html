@@ -10,6 +10,7 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -25,18 +26,18 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="premium.html">Premium</a>
-          </li>
+        </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Movies</a>
             <div>
               <ul class="dropdown-menu" id="moviesList">
-                <li><a class="dropdown-item" href="#popular">Popular</a></li>
-                <li><a class="dropdown-item" href="#top-rated">Top-Rated</a></li>
-                <li><a class="dropdown-item" href="#now-playing">Now-Playing</a></li>
+                <li><a class="dropdown-item" href="index.html#popular">Popular</a></li>
+                <li><a class="dropdown-item" href="index.html#top-rated">Top-Rated</a></li>
+                <li><a class="dropdown-item" href="index.html#now-playing">Now-Playing</a></li>
               </ul>
             </div>
           </li>
@@ -44,10 +45,10 @@
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
             <div>
               <ul class="dropdown-menu" id="seriesList">
-                <li><a class="dropdown-item" href="#popular_tv">Popular Series</a></li>
-                <li><a class="dropdown-item" href="#top_rated_tv">Top-Rated</a></li>
-                <li><a class="dropdown-item" href="#now_playing_tv">On-Air Series</a></li>
-                <li><a class="dropdown-item" href="#airing_today_tv">Airing-Today</a></li>
+                <li><a class="dropdown-item" href="index.html#popular_tv">Popular Series</a></li>
+                <li><a class="dropdown-item" href="index.html#top_rated_tv">Top-Rated</a></li>
+                <li><a class="dropdown-item" href="index.html#now_playing_tv">On-Air Series</a></li>
+                <li><a class="dropdown-item" href="index.html#airing_today_tv">Airing-Today</a></li>
               </ul>
             </div>
           </li>
@@ -64,9 +65,10 @@
         </form>
         <div id="searchResults"></div>
 
-        <a href="#">
+        <a href="login.html" style="margin-right: 1rem;">
           <i class="fa-solid fa-circle-user nav-link"
-            style="color: #ffffff; font-size: xx-large; margin-right: 1rem;"></i>
+            style="color: #ffffff; font-size: xx-large; margin-left: 5px;"></i>
+            <span class="nav-link active" aria-current="page">Log In</span>
         </a>
       </div>
     </div>
