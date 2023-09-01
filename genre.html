@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpayX Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="brandname" src="styles/images/SpayX.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="premium.html">Premium</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Movies</a>
+            <div>
+              <ul class="dropdown-menu" id="moviesList">
+                <li><a class="dropdown-item" href="index.html#popular">Popular</a></li>
+                <li><a class="dropdown-item" href="index.html#top-rated">Top-Rated</a></li>
+                <li><a class="dropdown-item" href="index.html#now-playing">Now-Playing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+            <div>
+              <ul class="dropdown-menu" id="seriesList">
+                <li><a class="dropdown-item" href="index.html#popular_tv">Popular Series</a></li>
+                <li><a class="dropdown-item" href="index.html#top_rated_tv">Top-Rated</a></li>
+                <li><a class="dropdown-item" href="index.html#now_playing_tv">On-Air Series</a></li>
+                <li><a class="dropdown-item" href="index.html#airing_today_tv">Airing-Today</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Genre</a>
+            <div>
+              <ul class="dropdown-menu" id="genreList">
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a href="#"><i class="fa-solid fa-circle-user nav-link"
+            style="color: #ffffff; font-size: xx-large; margin-right: 1rem;"></i></a>
+      </div>
+    </div>
+  </nav>
+  <h1 id="genreTitle">Genre</h1>
+   
+    <section id="movie-list" class="grid-container">
+        <!-- Movies will be displayed here -->
+    </section>
+    <section id="tv-list" class="grid-container">
+      <!-- tv series will be displayed here -->
+  </section>
+    
+    <script src="global.js"></script>
+    <script src="api.js"></script>
+    <script src="genre.js"></script>
+    <p id="spinner" class="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="error.js"></script>
+</body>
+</html>

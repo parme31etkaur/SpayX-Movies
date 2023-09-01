@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .marquee {
+            white-space: nowrap;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: marquee 45s linear infinite;
+            transform: translateX(0);
+
+            filter: brightness(0.5);
+        }
+
+        .marquee img {
+            height: 25%;
+        }
+
+        .dancing-poster1 {
+            display: inline-block;
+            left: 50%;
+            right: 50%;
+        }
+
+        .reversed {
+            animation-direction: reverse;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        #login .container #login-row #login-column #login-box {
+            margin-top: 20px;
+            max-width: 600px;
+            height: 320px;
+            border: 1px solid #9C9C9C;
+            background-color: #ffff;
+        }
+
+        #login-column {
+            width: 90%;
+        }
+
+        #login {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            background-color: rgba(24, 11, 11, 0.603);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+        }
+
+        #login .container #login-row #login-column #login-box #login-form {
+            padding: 20px;
+        }
+
+        #login .container #login-row #login-column #login-box #login-form #register-link {
+            margin-top: -85px;
+        }
+
+        .text-info {
+            color: black;
+            color: rgba(var(--bs-text-opacity)) !important;
+        }
+
+        .submit {
+            background-color: #000;
+            color: #ffff;
+            border: 2px solid #000000;
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        .submit:hover {
+            background-color: #ffff;
+            color: #000000;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 2px;
+        }
+
+        .google_icon {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .card {
+            background-color: black;
+            color: #ffff;
+            text-align: center;
+        }
+
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .btn {
+            color: #ffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="marquee">
+        <img class="dancing-poster1" src="styles/images/poster7.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster8.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster2.jpg" alt="Movie 2">
+        <img class="dancing-poster1" src="styles/images/poster9.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster4.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster1.jpg" alt="Movie 1">
+        <br>
+        <img class="dancing-poster1" src="styles/images/poster9.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster10.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster3.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster12.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster5.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster6.jpg" alt="Movie 3">
+        <br>
+        <img class="dancing-poster1" src="styles/images/poster13.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster4.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster1.jpg" alt="Movie 1">
+        <img class="dancing-poster1" src="styles/images/poster9.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster3.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster8.jpg" alt="Movie 3">
+        <br>
+        <img class="dancing-poster1" src="styles/images/poster11.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster6.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster5.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster2.jpg" alt="Movie 2">
+        <img class="dancing-poster1" src="styles/images/poster13.jpg" alt="Movie 3">
+        <img class="dancing-poster1" src="styles/images/poster7.jpg" alt="Movie 3">
+    </div>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="/login" method="post">
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>show password</span>
+                                    <span>
+                                        <input id="remember-me" name="remember-me" onclick="myFunction()"
+                                            type="checkbox">
+                                    </span>
+                                </label>
+                                <br>
+                                <input type="submit" class="submit" name="submit" class="btn btn-info btn-md"
+                                    value="Submit">
+                                <p>OR</p>
+                                <div class="card social-block">
+                                    <div class="card-body">
+                                        <a class="btn btn-block btn-social btn-google" href="/auth/google"
+                                            role="button">
+                                            <img src="styles/images/google.png" alt="google icon" class="google_icon">
+                                            Log In with Google
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const marquee = document.querySelector('.marquee');
+        let reverse = false;
+
+        setInterval(() => {
+            reverse = !reverse;
+            if (reverse) {
+                marquee.style.animation = 'none';
+                marquee.offsetHeight; // Trigger a reflow to reset animation
+                marquee.style.transform = 'translateX(-100%)';
+                marquee.style.animation = 'marquee 45s linear infinite';
+            } else {
+                marquee.style.animation = 'none';
+                marquee.offsetHeight; // Trigger a reflow to reset animation
+                marquee.style.transform = 'translateX(100%)';
+                marquee.style.animation = 'marquee 45s linear infinite reverse';
+            }
+        }, 20000);
+
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+      <p id="spinner" class="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
