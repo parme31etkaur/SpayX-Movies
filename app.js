@@ -21,7 +21,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true }).then(() => console.log('DB connection successfull'));
 
 const userSchema = new mongoose.Schema({
     email: String,
